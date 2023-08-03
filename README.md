@@ -1,2 +1,6 @@
 # DC_LAB
-DC lab practicals 
+DC lab practicals (PUBLIC)
+
+MANTHAN PARSEKAR
+45
+A3 BATCH
