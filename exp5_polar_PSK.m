@@ -8,7 +8,7 @@ n = input("Enter the input bit: ")
 for ii = 1: length(n)
   if n(ii) == 1;
     nn(ii) = 3;
-   else nn(ii) = 0;
+   else nn(ii) = -3;
  endif
  endfor
 

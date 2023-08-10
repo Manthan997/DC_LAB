@@ -12,7 +12,7 @@ for ii = 1: length(n)
  endif
  endfor
 
- %pulse shapping
+ %pulse shapping uni polar
  i = 1;
  t = 0:0.01 : length(n);
  for j = 1 : length(t)
@@ -28,11 +28,40 @@ axis([0 length(n) -10 10]);
 c=cos(2*pi*2*t);
 x = y.*c;
 
-%plotting
-figure(1)
+figure(3)
+%title('unipolar')
 plot(t, y, 'r-')
 axis([0 length(n) -5 5]);
-figure(2)
-plot(t,x)
+%%%%%%
+for ii = 1: length(n)
+  if n(ii) == 1;
+    nn(ii) = 3;
+   else nn(ii) = -3;
+ endif
+ endfor
+
+ %pulse shapping
+ i = 1;
+ t1 = 0:0.01 : length(n);
+ for j = 1 : length(t1)
+   if t1(j) <= i;
+     y(j) = nn(i);
+    else
+      y(j) = nn(i);
+      i = i+1;
+   endif
+ endfor
+plot(t1,y,'r-')
+axis([0 length(n) -10 10]);
+%c=cos(2*pi*2*t);
+%x = y.*c;
+
+%plotting
+figure(1)
+%title('polar')
+plot(t, y, 'r-')
+axis([0 length(n) -5 5]);
+%figure(2)
+%plot(t,x)
 
 
