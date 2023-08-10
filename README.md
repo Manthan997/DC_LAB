@@ -13,6 +13,7 @@ A3 BATCH
 |---|-------------------|-------------------|
 | 1 |      3/8/23       | HUFMAN ENCODING   |
 | 2 |      3/8/23       | BLOCK ENCODING    |
-| 3 |     10/8/23       | unipolar          |
-| 4 |     10/8/23       | polar             |
+| 3 |     10/8/23       | polar and unipolar|
+| 4 |     10/8/23       | unipolar ask      |
+| 5 |     10/8/23       | polar psk         |
 
